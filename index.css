@@ -22,6 +22,7 @@ body {
   text-shadow: var(--shadow-color) -2px 2px 8px;
   font-family: sans-serif, "helvetica";
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 #container {
@@ -29,7 +30,6 @@ body {
   width: 70vw;
   max-width: 70ch;
   margin-top: 30vh;
-  cursor: pointer;
   font-size: 22px;
   font-family: serif, times;
   text-transform: lowercase;
