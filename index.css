@@ -30,4 +30,5 @@ body {
   margin-top: 30vh;
   cursor: pointer;
   font-size: 28px;
+  text-transform: lowercase;
 }
