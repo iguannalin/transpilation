@@ -20,17 +20,19 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   text-shadow: var(--shadow-color) -2px 2px 8px;
-  font-family: sans-serif, "helvetica";
   text-transform: capitalize;
   cursor: pointer;
 }
 
 #container {
   line-height: 34px;
-  width: 70vw;
-  max-width: 70ch;
+  height: 50vh;
+  max-height: 70ch;
   margin-top: 30vh;
-  font-size: 22px;
-  font-family: serif, times;
+  font-size: 18px;
+  font-family: serif, "Times", 'Hiragino Sans GB';
+  text-align: center;
   text-transform: lowercase;
+  /* font-style: italic; */
+  writing-mode: vertical-rl;
 }

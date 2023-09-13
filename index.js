@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
   function display(ww) {
     ww.split("").forEach((ch) => {
       ch = ch.toLowerCase();
-      if (ch == "*") displayChar("&nbsp;");
+      if (ch == "*") displayChar("&nbsp;&nbsp;");
       else if (ch == "@") displayChar("<br>");
       else if (!alphabet[ch]) displayChar(ch);
       else displayChar(alphabet[ch], true);
@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
   fetch("words.txt").then((r) => r.text()).then((words) => {
     fetch("alphabet.json").then((a) => a.json()).then((aa) => {
       alphabet = aa;
-      display(words.replace(" ", "*"));//.replace("\n", "@"));
+      display(words.replace(" ", "*").replace("\n", "@"));
     })
   });
 });
