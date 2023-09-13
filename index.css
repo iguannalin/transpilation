@@ -14,6 +14,7 @@ html {
 
 body {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   flex-flow: column;
@@ -28,7 +29,6 @@ body {
   line-height: 34px;
   height: 50vh;
   max-height: 70ch;
-  margin-top: 30vh;
   font-size: 18px;
   font-family: serif, "Times", 'Hiragino Sans GB';
   text-align: center;
