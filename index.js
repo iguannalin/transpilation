@@ -29,6 +29,7 @@ window.addEventListener("load", () => {
     })
   }
 
+  // cantonese homophones found from--https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/syllables.php
   fetch("words.txt").then((r) => r.text()).then((words) => {
     fetch("alphabet.json").then((a) => a.json()).then((aa) => {
       alphabet = aa;
