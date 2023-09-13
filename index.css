@@ -25,10 +25,12 @@ body {
 }
 
 #container {
-  line-height: 42px;
-  width: 27ch;
+  line-height: 34px;
+  width: 70vw;
+  max-width: 70ch;
   margin-top: 30vh;
   cursor: pointer;
-  font-size: 28px;
+  font-size: 22px;
+  font-family: serif, times;
   text-transform: lowercase;
 }

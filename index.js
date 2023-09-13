@@ -3,7 +3,6 @@ window.addEventListener("load", () => {
   let alphabet;
 
   function onHover(e) {
-    console.log(e.target.innerText)
     e.target.innerHTML = alphabet[e.target.innerText]
     e.target.removeEventListener("touchstart", onHover);
     e.target.removeEventListener("mouseover", onHover);
@@ -24,6 +23,7 @@ window.addEventListener("load", () => {
     ww.split("").forEach((ch) => {
       ch = ch.toLowerCase();
       if (ch == "*") displayChar("&nbsp;");
+      else if (ch == "@") displayChar("<br>");
       else if (!alphabet[ch]) displayChar(ch);
       else displayChar(alphabet[ch], true);
     })
@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
   fetch("words.txt").then((r) => r.text()).then((words) => {
     fetch("alphabet.json").then((a) => a.json()).then((aa) => {
       alphabet = aa;
-      display(words.replace(" ", "*"));
+      display(words.replace(" ", "*"));//.replace("\n", "@"));
     })
   });
 });
